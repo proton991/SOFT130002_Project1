@@ -1,0 +1,22 @@
+.container {
+    margin: 20px auto;
+    width: 80%;
+    border: 1px solid;
+    /*background-color: whitesmoke;*/
+}
+
+.result__container {
+    margin-top: 5%;
+    /*background-color: wheat;*/
+}
+
+.result__item {
+    border: 1px solid black;
+    display: flex;
+    margin-top: 5%;
+    background-color: whitesmoke;
+}
+
+.img__description {
+    margin-left: 3rem;
+}

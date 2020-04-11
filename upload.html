@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/css/home.css">
+    <link rel="stylesheet" href="style/css/upload.css">
+    <script class="jsbin" src="js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="js/upload.js"></script>
+    <script type="text/javascript" src="js/button.js"></script>
+</head>
+<body>
+<header>
+    <img class="logo" src="images/logo.svg" alt="logo">
+    <nav>
+        <ul class="nav__links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="browse.html">Browse</a></li>
+            <li><a href="search.html">Search</a></li>
+        </ul>
+    </nav>
+    <div class="dropdown">
+        <button class="dropdown-button">Account</button>
+        <div class="dropdown-content">
+            <a href="upload.html"><i class="fa fa-upload" aria-hidden="true"></i>Upload</a>
+            <a href="my_photos.html"><i class="fa fa-picture-o" aria-hidden="true"></i> My Photos</a>
+            <a href="my_favourite.html"><i class="fa fa-heart" aria-hidden="true"></i>My Favourite</a>
+            <hr>
+            <a href="index.html"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <header style="border-bottom: 2px solid black; background: green">
+        <h2 style="text-align: center">Upload</h2>
+    </header>
+    <div class="file-upload">
+        <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image
+        </button>
+        <div class="image-upload-wrap">
+            <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*"/>
+            <div class="drag-text">
+                <h3>Drag and drop a file or select add Image</h3>
+            </div>
+        </div>
+        <div class="file-upload-content">
+            <img class="file-upload-image" src="#" alt="your image"/>
+            <div class="image-title-wrap">
+                <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <form>
+        <div class="upload__form">
+            <label for="upload_title"><b>Title</b></label>
+            <input type="text" name="upload_title">
+            <label for="upload_description"><b>Description</b></label>
+            <textarea name="upload_description" rows="5"></textarea>
+            <label for="upload_country"><b>Country</b></label>
+            <input type="text" name="upload_country">
+            <label for="upload_city"><b>City</b></label>
+            <input type="text" name="upload_city">
+        </div>
+        <a href="my_photos.html" class="w3-button w3-green" style="margin: 0 20px">Upload</a>
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+.photo__container {
+    margin: 50px auto;
+    width: 75%;
+}
+
+.photo__item {
+    display: flex;
+    margin-top: 5%;
+    border: 10px solid gray;
+}
+
+.img__description {
+    margin-left: 5%;
+}

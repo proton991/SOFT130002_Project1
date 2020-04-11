@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Oxanium:500&display=swap');
+html, body{
+    font-family: Arial, serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+header img {
+    align-items: center;
+    width: 40px;
+}
+.logo {
+
+}
+/*.dropdown {*/
+/*    */
+/*}*/
+li, a {
+    font-family: "Oxanium", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: whitesmoke;
+    text-decoration: none;
+    list-style: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: gray;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0 2rem;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover {
+    color: orangered;
+}
+/* 下拉按钮样式 */
+.dropdown-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 18px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-button:before {
+    /*size: 10px 10px;*/
+    /*position: relative;*/
+    /*width: 10px;*/
+    /*height: 10px;*/
+    /*display: inline-block;*/
+    /*background-size: 20px;*/
+    /*background-image: url("../../images/arrow-drop-down.png");*/
+    content: url("../../images/arrow-drop-down.png");
+}
+/* 容器 <div> - 需要定位下拉内容 */
+.dropdown {
+    padding: 0 16px;
+    margin-left: auto;
+    position: relative;
+}
+
+/* 下拉内容 (默认隐藏) */
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* 下拉菜单的链接 */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* 鼠标移上去后修改下拉菜单链接颜色 */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* 在鼠标移上去后显示下拉菜单 */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* 当下拉内容显示后修改下拉按钮的背景颜色 */
+.dropdown:hover .dropdown-button {
+    background-color: #3e8e41;
+}
+
+nav ul li a.active {
+    color: skyblue;
+}
+
+#container {
+    min-height: 100%;
+}
+#main {
+    overflow: auto;
+    padding-bottom: 180px;
+    min-height: 100%;
+    /*width: 90%;*/
+}
+.singlePic {
+    padding-left: 30%;
+    margin: 50px auto;
+}
+.singlePic img{
+    height: 480px;
+    width: 640px;
+}
+.picList {
+    align-items: center;
+    width: 80%;
+    margin: 60px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.picList .w3-card-4 {
+    width: 30%;
+    border-style: solid;
+    border-width: 2px;
+    margin: 2.5rem 0;
+}
+.picList div a img {
+    width: 100%;
+    height: 100%;
+}
+.pic{
+    margin: 50px auto;
+    width: 33%;
+}
+.pic img {
+    width: 300px;
+    height: 300px;
+}
+#footer {
+    background-color: black;
+    position: relative;
+    height: 180px;
+    margin-top: -180px;
+    clear: both;
+
+}
+.footer-top {
+    display: flex;
+    color: white;
+    justify-content: space-around;
+}
+#footer div ul li {
+    padding: 10px 0;
+}
+.footer-btm {
+    color: whitesmoke;
+    text-align: center;
+}
+
+.picBlock {
+    background-color: whitesmoke;
+}
+.aux__button {
+    z-index: 99;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}

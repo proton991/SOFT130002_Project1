@@ -1,0 +1,88 @@
+
+.sidebar {
+    height: 90%;
+    width: 20%;
+}
+.w3-ul>li>a{
+    color: black;
+}
+.l0 {
+    border-width: 2px;
+    border-style: solid;
+    border-color: wheat;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.l1{
+    border-width: 1px;
+    border-style: solid;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.l2{
+    border-width: 1px;
+    border-style: solid;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.same{
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+.text{
+    font-size: 20px;
+    width: 80%;
+}
+.btn{
+    border: solid 1px beige;
+    width: 20%;
+    background-color: antiquewhite;
+}
+.main__content {
+    margin-top: 2%;
+    width: 70%;
+    border: solid 1px black;
+}
+.container {
+    overflow: auto;
+    padding-bottom: 80px;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.img-filter {
+    display: flex;
+    justify-content: space-around;
+    /*background: whitesmoke;*/
+    width: 100%;
+    flex-wrap: wrap;
+    /*height: 10%;*/
+}
+.w3-select{
+    width: 25%;
+}
+.w3-container {
+    border: 1px solid black;
+}
+.picList {
+    background: white;
+    align-items: center;
+    width: 80%;
+    margin: 60px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.pic{
+    margin: 50px auto;
+    width: 22%;
+}
+.img {
+    width: 150px;
+    height: 150px;
+}
